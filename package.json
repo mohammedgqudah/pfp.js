@@ -1,0 +1,32 @@
+{
+  "name": "pfp.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js --exec babel-node",
+    "build": "npm run clean && node_modules/.bin/babel src -d dist",
+    "clean": "rm ./dist -rf && mkdir dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "random-gradient": "0.0.2",
+    "sharp": "^0.22.1",
+    "svg2img": "^0.6.0",
+    "text2png": "^2.1.0",
+    "trianglify": "^2.0.0",
+    "xmlserializer": "^0.6.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/runtime": "^7.4.5",
+    "nodemon": "^1.19.1"
+  }
+}
